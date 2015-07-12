@@ -8,4 +8,4 @@ Times <- as.character(mydata$Time)
 Dates <- x[relevant]
 DateTime <- paste(Dates, Times, sep = "/")
 DateTime <- strptime(DateTime, format = "%d/%m/%Y/%H:%M:%S")
-plot(DateTime, Global.Active.Power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l", srt = 45)
+plot(DateTime, Global.Active.Power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l")
