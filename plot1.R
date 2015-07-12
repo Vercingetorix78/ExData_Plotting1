@@ -4,4 +4,9 @@ x <- as.character(x)
 relevant <-which(x == "1/2/2007" | x == "2/2/2007")
 mydata <- mydata[relevant, ]
 Global.Active.Power <- as.numeric(as.character(mydata[,3]))
-hist(Global.Active.Power, main = "Global Active Power", col = "red", xlab = "Global Active Power (kilowatts)")
+hist(Global.Active.Power, 
+     main = "Global Active Power", 
+     col = "red", 
+     xlab = "Global Active Power (kilowatts)",
+     ylim = c(0, 1200)
+     )
