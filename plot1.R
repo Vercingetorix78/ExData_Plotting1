@@ -1,3 +1,4 @@
+png(file = "./plot1.png", width = 480, height = 480)
 mydata <- read.csv("./household_power_consumption.txt", sep = ";")
 x <- mydata$Date
 x <- as.character(x)
@@ -10,3 +11,4 @@ hist(Global.Active.Power,
      xlab = "Global Active Power (kilowatts)",
      ylim = c(0, 1200)
      )
+dev.off()

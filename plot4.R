@@ -1,3 +1,4 @@
+png(file = "./plot4.png", width = 480, height = 480)
 mydata <- read.csv("./household_power_consumption.txt", sep = ";")
 x <- mydata$Date
 x <- as.character(x)
@@ -47,3 +48,4 @@ plot(DateTime,
      xlab = "datetime",
      type = "l"
 )
+dev.off()

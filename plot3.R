@@ -1,3 +1,4 @@
+png(file = "./plot3.png", width = 480, height = 480)
 mydata <- read.csv("./household_power_consumption.txt", sep = ";")
 x <- mydata$Date
 x <- as.character(x)
@@ -19,3 +20,4 @@ legend("topright", col = c("black","red", "blue"),
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        lwd = c(1,1,1)
        )
+dev.off()

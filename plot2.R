@@ -1,3 +1,4 @@
+png(file = "./plot2.png", width = 480, height = 480)
 mydata <- read.csv("./household_power_consumption.txt", sep = ";")
 x <- mydata$Date
 x <- as.character(x)
@@ -14,3 +15,4 @@ plot(DateTime,
      ylab = "Global Active Power (kilowatts)", 
      type = "l"
      )
+dev.off()
